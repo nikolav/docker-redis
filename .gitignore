@@ -246,3 +246,4 @@ yarn-error.log*
 api/storage/
 scp-config.sh
 redis.conf
+wserver.sh

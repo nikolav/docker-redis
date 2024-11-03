@@ -1,5 +1,7 @@
 #!/bin/bash
 
+WSERVER="./wserver.sh"
+
 # update packages
 apt update
 apt-get update
@@ -29,6 +31,11 @@ chmod +x /usr/local/bin/docker-compose
 ufw allow OpenSSH
 ufw allow 6655
 ufw enable
+
+# allow:exe ./wserver.sh
+if [ -e "$WSERVER" ]; then
+  chmod 755 $WSERVER
+fi
 
 # shortcuts
 alias ll='ls -AlFht --color=auto --group-directories-first '
