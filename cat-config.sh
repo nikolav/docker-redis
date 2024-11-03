@@ -1,8 +1,8 @@
 #!/bin/bash
 
 
-echo '@@ ./redis-server.sh'
-cat ./redis-server.sh
+echo '@@ ./wserver.sh'
+cat ./wserver.sh
 
 echo '@@ ./.env'
 cat ./.env

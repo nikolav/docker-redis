@@ -4,4 +4,4 @@ WORKDIR /home/app
 
 COPY . ./
 
-CMD [ "./wserver.sh" ]
+CMD ["./wserver.sh"]
