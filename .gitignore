@@ -1,6 +1,7 @@
 __pycache__/
 __pypackages__/
 _.py
+!.env.example
 !.vscode/*.code-snippets
 !.vscode/extensions.json
 !.vscode/launch.json
@@ -23,14 +24,13 @@ _.py
 .DS_Store
 .dynamodb/
 .eggs/
-.env*
 .env.backup
 .env.development.local
 .env.local
 .env.production.local
 .env.test.local
+.env*
 .env*.local
-!.env.example
 .eslintcache
 .fuse_hidden*
 .fusebox/
@@ -156,6 +156,7 @@ _.py
 ~$*.ppt*
 ~$*.xls*
 $RECYCLE.BIN/
+api/storage/
 app/storage/
 Backup of *.doc*
 bootstrap/compiled.php
@@ -224,6 +225,7 @@ redis.conf
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 restapi--express/storage
 sdist/
+server_setup.log
 share/python-wheels/
 src/style/build.css
 src/styles/build.css
@@ -243,7 +245,3 @@ wheels/
 yarn-debug.log*
 yarn-error.log
 yarn-error.log*
-api/storage/
-scp-config.sh
-redis.conf
-# wserver.sh
