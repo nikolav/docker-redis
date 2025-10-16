@@ -1,6 +1,6 @@
 #!/bin/bash
 
-APP_HOST=108.61.179.22
+APP_HOST=45.76.88.13
 APP_PATH=/root/app/docker-redis
 
 scp ./.env root@$APP_HOST:$APP_PATH
