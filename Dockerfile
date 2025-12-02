@@ -1,7 +1,9 @@
-FROM redis
+FROM redis:7-alpine
 
 WORKDIR /home/app
 
-COPY . ./
+COPY ./redis/redis.conf /usr/local/etc/redis/redis.conf
 
-CMD ["./wserver.sh"]
+EXPOSE 6379
+
+CMD ["redis-server", "/usr/local/etc/redis/redis.conf"]
