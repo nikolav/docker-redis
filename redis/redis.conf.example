@@ -1,5 +1,5 @@
-appendonly yes
-appendfsync everysec
+requirepass <PASSWORD>
 bind 0.0.0.0
 protected-mode no
-requirepass <PASSWORD>
+appendonly yes
+appendfsync everysec
