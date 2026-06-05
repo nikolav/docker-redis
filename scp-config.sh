@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-HOST=1.22.333
+HOST=95.179.160.79
 USER=root
 SRC=/root/app/docker-redis
 KEY_ID=id_ed25519_vultr
