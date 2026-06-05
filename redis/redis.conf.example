@@ -1,1 +1,5 @@
-requirepass <password>
+appendonly yes
+appendfsync everysec
+bind 0.0.0.0
+protected-mode no
+requirepass <PASSWORD>
