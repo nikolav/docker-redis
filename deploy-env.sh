@@ -56,8 +56,9 @@ fi
 
 # ---------- firewall ----------
 ufw allow OpenSSH
-ufw allow 6379/tcp
+ufw allow 6379/tcp comment 'Redis public access'
 ufw --force enable
+ufw reload
 
 # ---------- debug ----------
 echo -e "\n=== Setup complete ==="
