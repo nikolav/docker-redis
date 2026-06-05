@@ -8,7 +8,7 @@ NAME="cache-redis"
 docker rm -f "$NAME" >/dev/null 2>&1 || true \
 && docker run -d \
   --name "$NAME" \
-  -p 6379:6379 \
+  -p 0.0.0.0:6379:6379 \
   --env-file ./.env \
   -v redis-data:/data \
   --restart unless-stopped \
