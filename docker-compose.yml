@@ -1,0 +1,23 @@
+services:
+
+  #build>        docker compose build redis
+  #build:fresh>  docker compose build --pull redis
+  #build:clean>  docker compose build --pull --no-cache redis
+  #push>         docker compose push redis
+  redis:
+    image: 0imbn7v6rkw/cache-redis
+
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    env_file:
+      - ./.env
+
+    restart: unless-stopped
+
+    volumes:
+      - redis-data:/data
+
+volumes:
+  redis-data:
