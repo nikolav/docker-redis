@@ -1,4 +1,4 @@
-FROM redis:7.4.7-bookworm
+FROM redis:8.2.7-bookworm
 
 # Ensure data directory exists with the right permissions
 RUN mkdir -p /data \
