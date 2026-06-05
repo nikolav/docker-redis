@@ -10,6 +10,7 @@ docker rm -f "$NAME" >/dev/null 2>&1 || true \
   --name "$NAME" \
   -p 6379:6379 \
   --env-file ./.env \
+  -v redis-data:/data \
   --restart unless-stopped \
   --pull=always \
   --init \
