@@ -15,10 +15,11 @@ fi
 apt-get update
 # apt-get upgrade -y
 
-# ---------- base deps ----------
+# ---------- base deps + redis tools ----------
 apt-get install -y --no-install-recommends \
   ca-certificates curl gnupg lsb-release \
-  git ufw
+  git ufw \
+  redis-tools
 
 # # ---------- git config (root only) ----------
 # git config --global user.name "nikolav"
