@@ -19,7 +19,9 @@ apt-get update
 apt-get install -y --no-install-recommends \
   ca-certificates curl gnupg lsb-release \
   git ufw \
-  redis-tools
+  redis-tools \
+&& apt-get clean \
+&& rm -rf /var/lib/apt/lists/*
 
 # # ---------- git config (root only) ----------
 # git config --global user.name "nikolav"
