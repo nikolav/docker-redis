@@ -12,5 +12,4 @@ EXPOSE 6379
 
 WORKDIR /data
 
-# CMD ["redis-server", "/usr/local/etc/redis/redis.conf"]
-CMD [ "redis-server", "--appendonly", "yes", "--appendfsync", "everysec" ]
+CMD ["redis-server", "/usr/local/etc/redis/redis.conf"]
